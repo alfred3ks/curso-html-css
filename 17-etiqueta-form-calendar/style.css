@@ -1,0 +1,77 @@
+/*
+
+17. Etiqueta form y el calendario.
+
+Mostraremos como generar un calendario dentro de nuestro formulario. Pediremos la hora, semana y mes.
+
+Usaremos nuestra etiqueta form para seguir los buenas practicas en semantia.
+
+Para hacer calendarios en un form existe dos formas, una mas compleja y una mas sencilla.
+
+La mas compleja:
+
+    <h2>Formulario de contacto</h2>
+    <form action="">
+        <label for="hora">
+            <span>Hora</span>
+            <input type="time" id="hora" name="hora">
+        </label>
+
+        <label for="dia">
+            <span>Día</span>
+            <input type="date" id="dia" name="dia">
+        </label>
+
+        <label for="semana">
+            <span>Semana</span>
+            <input type="week" id="semana" name="semana">
+        </label>
+
+        <label for="mes">
+            <span>Mes</span>
+            <input type="month" id="mes" name="mes">
+        </label>
+
+        <input type="submit">
+    </form>
+
+Como puedes ver aqui el input agrega un nuevo atributo name="" que es igual al for del label, cuando se envie ahi vemos a que label hace referencia.
+
+Existe un tipo de input que es de enviar:
+
+<input type="submit">
+
+Nos agrega un boton de envia al formulario.
+
+file:///C:/Users/alfsa/Desktop/html-css/index.html?hora=17%3A56&dia=2020-09-25&semana=2020-W39&mes=2020-10
+
+Cuando se envia el formulario podemos ver en la url lo importante del atributo name="" de los input.
+
+Ahora vemos la forma sencilla de hacerlo:
+
+Nota: Para comentarios podemos colocar al codigo que deseamos comentar por medio de estos simbolos:
+
+<!--
+-->
+
+Todo lo que pondramos dentro sera agregado como un comentario y el navegador no lo ejecutara.
+
+<h2>Formulario mas sencillo</h2>
+    <!--En este calendario enviamos 4 cosas de una vez -->
+    <form action="">
+        <label for="calendario">
+            <span>Calendario</span>
+            <input type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit">
+    </form
+
+file:///C:/Users/alfsa/Desktop/html-css/index.html?calendario=2020-09-30T20%3A11
+
+Como vemos en la url los datos que se envia.
+
+Para mas información sobre calendarios ver en la web:
+https://developer.mozilla.org/es/docs/Web/HTML/Element/input
+
+
+*/

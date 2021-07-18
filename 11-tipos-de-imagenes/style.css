@@ -1,0 +1,52 @@
+/*
+
+11. Tipos de imagenes.
+
+Lossy vs Lossless.
+
+Lossy con perdida.
+Lossless sin perdida.
+
+Existen dos tipos de imagenes, las sin perdida y las con perdida, y esto depende de como el formato maneja las imagenes.
+
+Formatos Lossless.
+Los formatos de imagen sin perdida capturan todos los datos de su archivo original. No se pierde nada del archivo original, foto o obra de arte, de ahi el termino "sin perdida". El archivo aun puede estar comprimido, pero todos los formatos sin perdida podran reconstruir su imagen a su estado original.
+
+Formatos Lossy.
+Los formatos de imagen con perdida se aproximan a su imagen original. Por ejemplo, una imagen con perdida podria reducir la cantidad de colores en su imagen o analizar la imagen en busca de datos innecesarios. Estos reducira el tamaño del archivo, aunque pueden reducir la calidad de su imagen.
+
+Por lo general, los archivos con perdida son mucho mas pequeños que los archivos sin perdida, lo que los hace ideales para usar en linea donde el tamaño del archivo y la velocidad de descarga son vitales.
+
+¿Que formatos existen?
+
+1. GIF.
+- graphics interchange format.
+- Formato Lossless.
+
+2. PNG 8.
+- portable network graphics
+- Formato Lossless
+- Para logotipos con fondo transparente.
+- hasta 256 colores.
+
+3. PNG 24.
+- portable network graphics
+- Formato Lossless
+- mas de 256 colores, mas colores que al anterior.
+- mas pesado que al anterior.
+
+4. JPG/JPEG.
+- Photographic experts group
+- Formato Lossy
+- Para fotografias
+- Maneja gama de colores ilimitada.
+- Se puede comprimir y pierde bastante calidad pero es la ideal para la web.
+
+5. SVG - Vector.
+- scalable vector graphics, formato vector.
+- Formato Lossless
+- muy ligero para iconos y logotipos para escalar. usado en pantallas retinas.
+
+En resumen ver la imagen anexa.
+
+*/

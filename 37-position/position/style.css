@@ -1,0 +1,144 @@
+/*
+
+Position:
+
+Por default todos los elementos en el navegador tiene posicion static.
+
+Veremos los diferentes tipos de posicionamientos.
+
+1. position:relative
+
+Nos permite posicionar una caja y luego desplazarla desde su posicion original dejando el espacio vacio y los demas elementos no se mueven.
+
+Para desplazarla usaremos estas 4 propiedades:
+
+- top,
+- left,
+- right,
+- botton.
+
+Como vemos en el ejemplo:
+
+Desplazamiento relative
+.caja {
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 200px;
+}
+
+2 position:absolute
+
+Esta propiedad nos permite posicionar una caja y luego desplazarla, toma como referencia nuestro documentos html y al moverse el resto de cajas si ocupan su lugar. Osea la sacamos del flujo.
+
+Para desplazarla usaremos estas 4 propiedades:
+
+- top,
+- left,
+- right,
+- botton.
+
+No se suele utilizar este tipo de desplazamiento porque es dificil de controlar.
+
+Es mas recomendado cuando tenemos un caja dentro de otra como vemos a continuacion:
+
+Tenemos una caja padre:
+.caja-padre {
+    width: 500px;
+    height: 500px;
+    background-color: darkmagenta;
+    position: relative;
+    left: 200px;
+}
+
+La cual debemos colocar un position relative, ya que la caja hijo ya se va a posicionar al colocar position absoluto desde la esquina superior del padre asi:
+
+.caja-hijo {
+    position: absolute;
+    top: -100px;
+    left: 150px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+Esta es la mejor manera para mover una caja dentro de otra como puedes ver.
+
+3. position fixed
+
+Lo que hace es dejar fijo el elemento sobre su posicion y lo vemos cuando hacemos scroll. Tambien toma como referencia nuestro documento html que es el padre. Al usar esta propiedad la caja se desplaza y pierde su espacio que es ocupado por el siguiente elemento.
+
+Para posicionala usaremos estas 4 propiedades:
+
+- top,
+- left,
+- right,
+- botton.
+
+Vemos el ejemplo sobre la caja 4.
+
+.caja-4 {
+    position: fixed;
+    top:0px;
+    left: 400px;
+}
+
+Su utilidad no suele ser muy habitual.
+
+Hasta aqui claro no? Bien....
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: crimson;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.caja-1 {
+    position: relative;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 200px;
+}
+
+.caja-padre {
+    width: 500px;
+    height: 500px;
+    background-color: darkmagenta;
+    border-radius: 10px;
+    position: relative;
+    left: 100px;
+}
+
+.caja-hijo {
+    position: absolute;
+    top: -100px;
+    left: 150px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-4 {
+    position: fixed;
+    top:0px;
+    left: 600px;
+}
+
+

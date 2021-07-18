@@ -1,0 +1,188 @@
+/*
+
+41. Flexbox layout.
+
+Ahora si queremos posicionar nuestros elementos de manera vertical flexbox tambien nos ayuda a eso.
+
+La idea es que ese contenido que tenemos alineado arriba lo podamos alinear al medio o al final del tamaño de nuestro contenedor. Para eso nuestro container debe tener dada una altura. Height.
+
+Estas propiedades van a trabajar en la vertical de nuestro container.
+
+.container {
+    border: 0.3rem solid black;
+    height: 50vh; Le damos altura al contenedor
+    display: flex;
+    flex-direction: row;  --> por defecto
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    flex-wrap: nowrap; --> por defecto
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start; -->por defecto
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    Propiedades de layout
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch; --> esta propiedad si el contenedor hijo tiene  no funciona se estiran al 100% del padre
+    align-items: baseline; --> igual que el anterior si tiene un valor de altura el hijo no veremos los cambios al quitarle el height toma el tamaño del contenido
+}
+
+Ahora tambien podemos actuar en los hijos.
+Les podemos cambiar el orden con la propiedad:
+order.
+
+Con esto cambiamos el orden en que se muestran los hijos.
+
+Si no le indicamos a algun hijo un order ese pasa al principio o hacia la izquierda, los de orden inicial a la derecha.
+
+.box1 {
+    background-color: black;
+    color: white;
+    order: 1;
+}
+.box2 {
+    background-color: blueviolet;
+    order:3;
+}
+.box3 {
+    background-color: chartreuse;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: teal;
+    order: 4;
+}
+.box6 {
+    background-color: rebeccapurple;
+    order: 2;
+}
+
+Bien ahora usaremos una ueva propiedad llamada flex-grow q igual colocaremos a los hijos:
+
+Como se ve al aplicar esta propiedad a cualquier hijo este se estira y se ocupa todo el espacio libre hacia los lados.
+
+.box1 {
+    background-color: greenyellow;
+    order: 1;
+    flex-grow: 1;
+}
+.box2 {
+    background-color: blueviolet;
+    order:3;
+    flex-grow: 1;
+}
+.box3 {
+    background-color: chartreuse;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: teal;
+    order: 4;
+}
+.box6 {
+    background-color: rebeccapurple;
+    order: 2;
+}
+
+Ahora vamos a trabajar con la clase que tiene los items llamada box:
+
+.box {
+    width: 10rem;
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+Ahora vemos que cuando la pantalla se hace mas pequeña los elementos colapsan pero ocupan todo el contenedor.
+
+Esta propiedad si me gusta.....
+
+Muy importante para el mundo mobile.
+
+*/
+
+/* Empezamos aplicar estilos con flex box */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Con esto ya podemos hacer uso del rem  */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.container {
+    border: 0.3rem solid black;
+    /* height: 50vh; Le damos altura al contenedor */
+    display: flex;
+    /* flex-direction: row;  --> por defecto*/
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; --> por defecto*/
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: flex-start; -->por defecto */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* Propiedades de layout */
+
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: stretch; --> esta propiedad si el contenedor hijo tiene  no funciona se estiran al 100% del padre*/
+    /* align-items: baseline; --> igual que el anterior si tiene un valor de altura el hijo no veremos los cambios al quitarle el height toma el tamaño del contenido*/
+}
+
+.box {
+    width: 20rem;
+    height: 20rem;
+    flex-basis: 20rem;
+    flex-grow: 1;
+}
+
+.box1 {
+    background-color: greenyellow;
+    order: 1;
+    /* flex-grow: 1; */
+}
+.box2 {
+    background-color: blueviolet;
+    /* order:3; */
+    /* flex-grow: 1; */
+}
+.box3 {
+    background-color: chartreuse;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: teal;
+    /* order: 4; */
+}
+.box6 {
+    background-color: rebeccapurple;
+    order: 2;
+}

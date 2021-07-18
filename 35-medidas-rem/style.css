@@ -1,0 +1,84 @@
+/*
+
+35. Medidas rem.
+
+En particular la mas recomendada para trabajar con unidades en relativa.
+
+Tenemos nuestro ejemplo:
+
+<main>
+    <p>Soy un texto ejemplo</p>
+</main>
+
+El inspector de elemento del navegador nos arroja:
+
+display:block;
+height:18.4px;
+
+margin-block-end:16px;
+
+margin-block-start:16px;
+margin-inline-end:0px;
+margin-inline-start:0px;
+width:524px;
+
+Estos 16px se estan heredando desde nuestra etiqueta HTML.
+
+p {
+    font-size: 1rem;
+}
+
+Vemos el inspector y nos arroja:
+
+display:block;
+
+font-size:16px;
+
+height:18.4px;
+margin-block-end:16px;
+margin-block-start:16px;
+margin-inline-end:0px;
+margin-inline-start:0px;
+width:524px;
+
+A diferencia de em, la unidad de medida rem hace referencia al estilo que tenga la etiqueta root o el root de nuestro proyecto.
+
+En este caso sera de nuesvo HTML. El navegador le agrega a HTML el valor de font-size:16px.
+
+Aqui siempre sera HTML. A diferencia de em que va a su padre directo. OJO como sabemos en elementos anidados.
+
+--------IMPORTANTE----------
+Sabiendo esto podemos decir que 1rem = 10px. Asi ya sabremos para hacer el calculo en rem del valor de pixels.
+
+Osea lo ideal es siempre aplicar rem en nuestros css
+
+Y de aqui en adelante deberiamos poner como reset las siguientes instrucciones:
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+Con esto ya sabemos que un 1rem = 10px
+html {
+    font-size: 62.5%;
+}
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Con esto ya sabemos que un 1rem = 10px*/
+html {
+    font-size: 62.5%;
+}
+
+p {
+    font-size:1.8rem;
+}
+
+main div {
+    font-size: 1.8rem;
+}

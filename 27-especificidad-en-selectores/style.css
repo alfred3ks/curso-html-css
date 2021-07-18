@@ -1,0 +1,42 @@
+/*
+
+27. Especificidad en selectores.
+
+Orden de declaracion.
+
+¿Como se controla el orden al declarar CSS en el navegador?
+
+1. Importancia
+2. Especificidad
+3. Orden en las fuentes (Llamada a diferentes archivos)
+
+La importancia es uno de los conceptos mas...pues...importantes.
+Si dos declaraciones tienen la misma importancia, la Especificidad de las reglas decidira cual se debe aplicar. Si las reglas tienen la misma Especificidad, el orden de las fuentes controla el resultado.
+
+Importancia:
+1. Hoja de estilo de agente de usuario (Estilos del navegador)
+2. Declaraciones normales en hojas de estilos de autor (nuestro css)
+3. Declaraciones importantes en hojas de estilos de autor(utiliza !important) Super mala practica.
+
+Especificidad:
+
+selectores                      especifidad
+!important                       1,0,0,0,0
+inline style                     0,1,0,0,0
+#id                              0,0,1,0,0
+.class                           0,0,0,1,0
+tag                              0,0,0,0,1
+
+Ver archivo anexo.
+
+Tenemos una calculadora para la especifidad:
+
+https://www.codecaptain.io/tools/css-specificity-calculator
+
+Reglas de cascada - Orden las fuentes:
+
+Ver hoja anexa.
+
+En tus estilos, las declaraciones al final del documento anularan a las que suceden antes en cada conflicto.
+
+*/

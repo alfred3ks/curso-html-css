@@ -1,0 +1,34 @@
+/*
+
+19. Formulario con input de tipo select.
+
+Vamos a ver un tipo de etiqueta llamada select, con la cual le podemos mostrar al usuario unas opciones en la cual el debe seleccionar.
+
+    <main>
+        <select name="cursos" id="">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standards">Web Standards</option>
+        </select>
+    </main>
+
+la etiqueta option recibe un atributo value que es igual al texto de la etiqueta, que cuando sea enviado es el valor que captura y va en la url a la BD.
+
+Este select es la forma de hacerlo pero no la mejor forma de hacerlo. La forma para que igual en moviles sea mas ideal es la sigiente:
+
+    <main>
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standards"></option>
+        </datalist>
+    </main>
+
+Como se puede ver en esta forma de hacer el select en la etiqueta opcion no lleva texto, solo el valor de value.
+
+Es mas practico asi y para dispositivos moviles mas facil poder interactuar con el. Ademas al ser un input el podra poner una opcion y que tal vez no se encuantra en la lista.
+
+*/

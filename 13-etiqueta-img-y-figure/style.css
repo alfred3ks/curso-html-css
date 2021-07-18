@@ -1,0 +1,41 @@
+/*
+
+13. Etiqueta img y figure.
+
+Para usar imagenes de pruebas existe una web bastante interesante:
+
+pexels.
+https://www.pexels.com/
+
+Hay que obtener de una imagen tres tamaños:
+Large - Grande
+Mediun - Mediana
+Small - Pequeña
+
+Recuerda despues de bajar las fotos pasarlas por la web para bajarles el peso.
+
+https://tinypng.com/
+
+La etiqueta img
+
+<img src="./pics/imagen.jpg" alt="Imagen de perrito">
+
+La etiqueta imagen como podemos ver tiene dos atributos:
+src --> nos indica la ruta donde se encuestra la imagen, puede ser una carpeta dentro del proyecto o una url de una web.
+alt --> atributo importante, sobre todo en el tema de accesibilidad, y si por alguna razon la imagen se rompe nos mostrara ese texto en la web.
+
+Ahora debemos decir que existe una etiqueta que ayuda a darle un contenedor a las imagenes, esta etiqueta es:
+
+<figure>
+    <img src="" alt="">
+</figure>
+
+Dentro de la etiqueta figure podemos utilizar una nueva etiqueta llamada:
+
+<figcaption></figcaption>
+
+La usamos para poner un contenido a la imagen.
+
+*/
+
+

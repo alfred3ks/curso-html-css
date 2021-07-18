@@ -1,0 +1,36 @@
+/*
+
+15. Etiqueta video.
+
+Vamos a ver la etiqueta para videos.
+
+Usaremos la etiqueta:
+
+<video src="./videos/video.mp4" controls preload="auto" width="700"></video>
+
+Esta etiqueta recibe un atributo src que es donde le daremos la ruta a nuestro video, bien puede ser un video que este en nuestro proyecto o uno alojado en internet.
+
+Puede recibir otros atributos como pueden ser:
+
+controls --> Nos agrega los botonos de reproduccion.
+preload --> Atributo importante, porque hace que el video empiece a renderizar cuando la pagina se empieza a crear en el navegador, baja el tiempo de espera para ver el video.
+width --> Podriamos agregar el tamaño del video, pero lo mejor es tratarlo por css.
+
+Tambien existe extension que le podemos agregar a la ruta del video si deseamos que se reproduzca en un momento especifico asi:
+
+<video src="./videos/video.mp4#t=2,10"></video>
+
+#t=2,10 --> el tiempo de inicio y tiempo donde deseo que termine.
+
+Se puede dar el caso que tengamos diferentes tipos de formatos de videos que deseamos reproducir.
+La forma de hacerlo en el contenido de la etiqueta de video ahi incluiremos una nueva etiqueta llamada <source> y quitamos el src la fuente del video de donde esta y se lo colocamos como atributo a la etiqueta source.
+
+<video controls preload="auto" width="700">
+    <source src="./videos/video.mp4">
+    <source src="./videos/video.m4v">
+</video>
+
+La eleccion cual video s reproducira la hara el navegador.
+
+*/
+

@@ -1,0 +1,15 @@
+54. Proximos pasos.
+
+El sigueinte curso que deberias tomar:
+
+- Curso de Mobile First. Se pone en practica todo los visto en este curso.
+
+Despues los siguientes cursos:
+
+- Curso de Grid layout.
+- Curso JavaScript Basico.
+- Curso de V8 y el navegador.
+- Curso de Chrome Dev Tools.
+- Curso de ES6.
+
+Esto por ahora.... Seguimos.....

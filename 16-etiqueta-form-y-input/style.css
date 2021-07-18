@@ -1,0 +1,38 @@
+/*
+
+16. Etiqueta form y input.
+
+Vamos a ver los formularios, son una importante en la web y es la forma como interactuamos con los usuarios, bien sea porque le pedidos informacion o ellos la solicitan a nosotros.
+
+"El mejor formulario es el no existe"
+
+- El usuario...
+
+Siguiendo con la semantica usaremos la etiqueta para formularios:
+
+<form action="">
+    <label for="nombre">
+        <span>Ingresa tu nombre</span>
+        <input type="text" id="nombre">
+    </label>
+</form>
+
+La etiqueta form le dice al navegador que lo que viene a continuacion es un formulario.
+Recibe tambien atributos En este caso action donde pondriamos la url el endpoint donde sera enviado a la BD y lo trabajaremos con JS.
+
+Dentro usaremos la etiqueta label:
+<label for="nombre">
+    <span>Ingresa tu nombre</span>
+    <input type="text" id="nombre" placeholder="Nombre">
+</label>
+
+Recibe atributos tambien en este caso el for donde colocaremos el mismo valor del id del input, y dentro de la misma colocaremos la etiqueta input.
+Esta etiqueta input puede ser de diferentes tipos, en este caso de tipo texto, es una cajita.
+
+En los input existe un atributo llamado placeholder el cual le agrega al inpult un texto que se puede ver y agrega mas informacion para el usuario. Sobre todo este atributo es importante en el input de tipo texto.
+
+*/
+/*
+form input {
+    display: block;
+} */

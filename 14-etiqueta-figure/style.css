@@ -1,0 +1,13 @@
+/*
+
+14. Etiqueta figure.
+
+<figure></figure>
+
+Nos ayuda a poderle agregar una breve descripcion a nuestra imagen usando la etiqueta:
+
+<figcaption></figcaption>
+
+Lo correcto de forma semantica es usar la etiqueta de figure. Veremos algunos proyectos que usan la etiqueta div, no esta mal pero lo correcto es escribir nuestro codigo usando la semantica.
+
+*/

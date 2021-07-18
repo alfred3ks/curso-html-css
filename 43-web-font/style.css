@@ -1,0 +1,67 @@
+/*
+
+43. Fuentes para nuestro proyecto.
+
+Que tipos de fuentes hay:
+
+Existen fuentes genericas, (generic-families), estas ya vienen programadas en la pc.
+Tenemos a:
+serif ---> Times New Roma, Georgia.
+sans-serif --> Helvetica, Verdana.
+cursive --> Dancing Script, Great Vibes
+monospace --> Courier New, Roboto Mono.
+
+Ahora como saber que fuentes bases tengo yo en mi pc?
+
+Vamos al navegador le damos a los tres botones horizontales que vemos en la izquierda del navegador, vamos a configuracion/(diseño)aspecto/personalizar fuentes. Entrando ahi podemos ver los diferentes menus, la segunda opcion o la tercera opcion son las fuentes que se cargaran si las que viene en el proyecto no se cargan.
+
+Ahora si la fuente que queremos no esta en la lista y queremos una en particular, tenemos en la web por ejemplo google font.
+
+https://fonts.google.com/
+
+Buscamos en el buscador la fuente que nos interese.
+
+Luego escogemos los diferentes estilos que nos interese.
+
+En el lateral izquierdo nos da un codifgo para poder implementar esa fuente en nuestro proyecto. Algo asi:
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+
+Este lo debemos colocar en la etiqueta head.
+
+Luego en nuestro css implementamos la fuente:
+
+font-family: 'Roboto', sans-serif;
+
+Como buenas practicas:
+. Solo cargar 1 fuente por proyecto.
+. Importarlas siempre en la etiqueta head.
+
+Asi podemos implementar las fuentes.
+
+*/
+
+:root {
+    --font:'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-family: var(--font);
+    font-size: 2.2rem;
+}
+
+p {
+    font-family: var(--font);
+    font-size: 1.6rem;
+}
+

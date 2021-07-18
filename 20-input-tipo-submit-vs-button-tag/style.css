@@ -1,0 +1,21 @@
+/*
+
+20. Input tipo submit vs button tag.
+
+Existen dos tipos de botones:
+- Uno usando un tipo Input tipo submit,
+<input type="submit" value="Enviar Formulario">
+
+- Otro que es una etiqueta tipo button.
+<button type="submit">Enviar</button>
+
+Son muy similares pero no son lo mismo, uno es un input y el otro es una etiqueta.
+
+Al boton de input como vemos ya nos trae un texto de predeterminado de enviar, pero lo podemos cambiar si le agregamos el atributo value="".
+
+En button le podemos agregar el atributo type para poderlo tratar con JS.
+
+Asi podemos personalizar cada uno de los botones.
+La de etiqueta button es mas flexible.
+
+*/

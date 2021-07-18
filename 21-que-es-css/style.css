@@ -1,0 +1,35 @@
+/*
+
+21. Que es CSS.
+
+CSS -- cascading style sheets
+
+Significa que es un documento que aplica todos los estilos en forma de cascada.
+
+Con CSS podemos implentar los colores, diferentes dimensiones, etc.
+
+Se le denomina estilos en cascada porque se aplican de arriba a abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad, se siguen una serie de normas para resolverla.
+
+La idea de CSS es la de utilizar el concepto de separación de presentación y contenido, intentando que los documentos HTML incluyan sólo información y datos, relativos al significado de la información a transmitir (el contenido), y todos los aspectos relacionados con el estilo (diseño, colores, formas, etc...) se encuentren en un documento CSS independiente (la presentación).
+
+Puedes visitar esta web donde nos puede ayudar a entender mas sobre css.
+
+https://cssreference.io/
+
+*/
+
+h1 {
+    color: brown;
+    font-size: 35px;
+}
+
+.parrafo-1 {
+    color: darkcyan;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#parrafo-2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgreen;
+    font-size: 24px;
+}

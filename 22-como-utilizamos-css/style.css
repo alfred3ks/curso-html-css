@@ -1,0 +1,78 @@
+/*
+
+22. Como utilizamos CSS.
+
+Existen varias formas de implementar css en nuestro proyecto.
+
+1. En la cabecera head por medio de la etiqueta link:
+<link rel="stylesheet" href="./css/style.css">
+Esta es la forma ideal.
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Implementación de CSS</title>
+</head>
+
+2. Hay una etiqueta llamada style. que ponemos en etiqueta head pero no es lo mas ideal debido a que la carga es muy pesada, esta bien para queñas pruebas:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementación de CSS</title>
+    <style>
+    // aqui nuestro css
+    </style>
+</head>
+
+3. En forma de atributo directamente en la etiqueta html:
+
+<h1 style="color:blue">Título</h1>
+
+Este estilo  se aplica a la etiqueta.
+
+Esto se llama estilo embebido.
+
+Tampoco es lo mas recomendado. Hay que evitarlo.
+
+Vale trabajaremos con nuestro archivo externo css:
+
+Podemos implementar nuestro css de tres formas:
+
+Por el elemento:
+p {
+    color: blue;
+    font-size: 35px;
+}
+
+Por la clase:
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+}
+
+Por ID:
+Es un identificador unico.
+#segundo-parrafo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgreen;
+}
+
+*/
+
+p {
+    color: blue;
+    font-size: 35px;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    color: crimson;
+}
+
+#segundo-parrafo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgreen;
+    font-size: 24px;
+}

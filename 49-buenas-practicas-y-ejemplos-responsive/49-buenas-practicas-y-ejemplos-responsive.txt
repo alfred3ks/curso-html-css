@@ -1,0 +1,38 @@
+49. Buenas practicas y ejemplos responsive.
+
+Recomendaciones:
+
+Separa siempre tus archivos de CSS por break point.
+
+mobile.css / style.css (inicial)
+tablet.css
+desktop.css
+
+Ayuda mucho en el proceso de carga de nuestro proyecto.
+
+En esta pagina podemos ver los break point mas utilizadas, hay varias pero con cubrir tres de ellas es suficiente.
+
+https://www.mydevice.io/
+
+Lo ideal como lo hemos realizado antes por lo visto, pero es bueno entrar de vez en cuando a ver si hay cambios.
+
+Ejemplos de web responsive.
+
+https://www.dropbox.com/es_ES/
+
+https://github.com/
+
+Esta siguientes usan css grig, hay curso asi que hay que revisarlo.
+
+https://www.smashingmagazine.com/
+
+https://dribbble.com/
+
+
+
+
+
+
+
+
+

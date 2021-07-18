@@ -1,0 +1,90 @@
+/*
+
+28. Demo de especificidad y orden en selectores.
+
+OJO. Las clases pueden estar en varios elementos de la misma pagina, pero id son unicos.
+
+Un ejemplo:
+
+h1 {
+    font-family: serif;
+}
+
+#page-title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+En este caso podemos ver que aunque yo he llamado en .title una font-family esta no se aplica porque por especificidad la que se aplica primero es el id #page-title
+
+El id es mas importante que la clase. MMMM interesante no?
+
+Cuando lo vemos en el inspector de elemento, el navegador siempre nos va a regresar de el mas importante al menos importante. Ver imagen anexa (especificidad-navegador).
+
+OJO pero si agregamos un !important en la class .title la cosa cambia, por especificidad:
+
+h1 {
+    font-family: serif;
+}
+
+#page-title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 18px;
+    font-family: monospace !important;
+}
+
+Podemos ver la imagene anexa (!importante), pero ojo esto no es correcto, no debemos usar esta opcion.
+
+29: Mas sobre selectores.
+
+Colocando el cursor en la hoja de css sobre los id o clases o selectores veremos que vs code nos muestra una referencia a la especificidad. Ver imagen anexa. Eso nos sirve de referencia paa saber el grado de especificidad de los selectores.
+
+No se considera buenas practicas utilizar id para estilos en css, si para JS pero para css lo mejor es usar clases.
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: purple;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-family: monospace; /* No carga porque toma el del ID, que es mas importante */
+}
+
+.nav {
+    margin-top: 10px;
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.nav .blog {
+    background-color: orange;
+}

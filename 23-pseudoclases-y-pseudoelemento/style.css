@@ -1,0 +1,64 @@
+/*
+
+23. Pseudoclases y Pseudoelementos.
+
+Usaremos BEM para nombrar las clases de css.
+
+Dejo un enlace para profundizar mas en esta metodologia de colocar las clases:
+
+https://en.bem.info/methodology/faq/#why-bem
+
+OJO debemos recordar que todos los navegadores ya nos agregan unos estilos predeterminados, mas adelante veremos como quitarlos y empezar de cero.
+
+Pseudoclass: ---> :class
+Define el estilo de un estado especial de un elemento.
+
+Pseudoelementos: ---> ::element
+Define el estilo de una parte especifica de un elemento.
+
+Para profundizar mas sobre psuedo clases y pseudo elementos mira las siguientes web:
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
+
+Ahora veremos los estilos que hemos aplicados:
+
+*/
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left:0;
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Aqui empezamos a ver la psuedoclases */
+/* La pseudoclase hover */
+.main-nav__item a:hover {
+    color: tomato;
+}
+
+/* Ahora la pseudo clase active */
+/* Cuando pulsamos sobre el elemento */
+.main-nav__item a:active {
+    color: yellow;
+}
+
+/* Ahora vemos los pseudoelementos */
+/* A diferencia aqui la llamamos con doble puntitos */
+/* Le agregamos una barrita vertical */
+/* mmm interesante si queremos agregar iconos... */
+.main-nav__item a::after{
+    content: " | ";
+}

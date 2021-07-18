@@ -1,0 +1,41 @@
+/*
+
+53. Labels, alt y title para la accesibilidad.
+
+Labels.
+
+<label for="name">
+    <span>¿Cual es tu nombre?</span>
+    <input id="name" type="text">
+</label>
+
+En el tema de usar labels para el input nos ayuda que cuando coloquemos el raton sobre el texto ya el foco del texto se habilita sobre el input para empezar a llenarlo.
+
+Ahora alt y title que son atributos que podemos agregar a ciertas etiquetas.
+
+<section>
+    <h2>atributo alt y title</h2>
+    <img src="./img/small.jpg" alt="imagen tecnologica, ordenador portatil de apple">
+</section>
+
+Para personas con discapacidad visual usan equipos screenreader para leer el contenido, aqui es muy importante el atributo alt ya que le informa la informacion de la imagen. Tambien el alt es importante por si se llega a romper la imagen por perdida de la ubicacion nos informa que ahi va una imagen y de que va.
+
+El atributo title es otro atributo que podemos agregar, cuando pasamos el raton sobre la imagen nos muestra esa informacion.
+Muy intersante en los enlaces.
+
+Bueno son pequeñas cosas que debemos agregar ser muy responsables 100% que pueda ser consumido por todos.
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 40%;
+}

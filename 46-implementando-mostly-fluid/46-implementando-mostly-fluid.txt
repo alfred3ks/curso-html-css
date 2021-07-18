@@ -1,0 +1,22 @@
+46. Implementando Mostly Fluid.
+
+Aqui vamos a implementar el modelo Mostly Fluid.
+
+He implementado todas las media queries en el mismo archivo css general. Al final del documento.
+
+Ahora como podemos ver si implementamos las media queries en archivos independientes los debemos llamar en este orden en la cabecera head:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <title>Mostly Fluid</title>
+</head>
+
+El primer archivo que se carga es el mobile, luego el de la tablet y por ultimo el de escritorio.
+
+Ahora hay que estar seguro que se estan descargando las hojas de estilos para los diferentes dispositivos, para eso en el inspector del navegador en la pantalla de network, se ven las hojas de estilos que se estan implementando, para cada vista se descarga esa hoja de estilo.
+El navegador descarga los archivos pero le da prioridad al que necesita en ese momento.
+

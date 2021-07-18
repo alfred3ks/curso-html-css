@@ -1,0 +1,78 @@
+/*
+
+26. Herencia.
+
+Tema importante que debemos dominar en css.
+
+<main>
+    <h1>Soy un titulo</h1>
+    <p>Soy un parrafo</p>
+</main>
+
+Vamos al navegador y con el inspector vemos los elementos:
+Si seleccionamos el elemento h1 vemos a la derecha unos estilos que el navegador aplica el. el user agent stylesheet. Vemos algo asi:
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+Para poder cambiar estos elementos debemos actuar sobre el html. como lo vemos en style.css:
+
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+Vemos como se modifica los vamores por defecto que trae los elementos:
+
+Valores iniciales del navegador:
+
+display:block;
+font-size:32px;
+font-weight:700;
+height:37.6px;
+margin-block-end:21.44px;
+margin-block-start:21.44px;
+margin-inline-end:0px;
+margin-inline-start:0px;
+width:751.2px;
+
+Valores tras hacer la modificacion en html:
+
+display:block;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size:24px;
+font-weight:700;
+height:28.8px;
+margin-block-end:16.08px;
+margin-block-start:16.08px;
+margin-inline-end:0px;
+margin-inline-start:0px;
+width:751.2px;
+
+La herencia es importante, porque podemos ver que hay etiquetas que heredan de sus padres, por ejemplo h1 si no le especificamos el tamaño de letra el hereda de su padre en este caso es html.
+
+mmm muy interesante.
+
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: inherit; /*  aqui le decimos que herede del padre-html*/
+}

@@ -1,0 +1,19 @@
+/* Implementamos los estilos de desktop */
+
+.container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c1 {
+        width: 30%;
+    }
+    .c2 {
+        width: 70%;
+    }
+    .c3, .c4 {
+        width: 33%;
+    }
+    .c5 {
+        width: 34%;
+    }

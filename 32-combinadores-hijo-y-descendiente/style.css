@@ -1,0 +1,61 @@
+/*
+
+32. Combinadores: adjacent siblings(combinators)
+
+Los combinadores en css nos ayudaran a tener una especificidad mas certera.
+
+Nos permite combinar multiples selectores y crear una mayor especificidad.
+
+Lo podemos ver en la imagen anexa(combinators).
+
+Tenemos basicamente 4 combinadores:
+
+1. Hermano adyacente o cercano:
+
+div + p {
+    ...
+}
+
+2. Hermano general:
+
+div ~ p {
+    ...
+}
+
+3. Hijo:
+
+div > p {
+    ...
+}
+
+4. Descendiente:
+
+div p {
+    ...
+}
+
+NOTA: Para sacar la virgulilla en windows portatil:
+
+AltGr + 4
+
+Puedes ver esta web para practicar los combinadores:
+
+https://flukeout.github.io/
+
+Tambien tenemos la web de mozilla para ampliar mas la informacion:
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
+
+*/
+
+/* Combinadores hijo */
+/* El div que sea padre de una etiqueta p o mejor asi la etiqueta p que sea hija directa de una etiqueta div*/
+div > p {
+    color: salmon;
+}
+
+/* Combinadores descendiente */
+div a {
+    color: sandybrown;
+}
+

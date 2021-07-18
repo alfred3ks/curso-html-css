@@ -1,0 +1,48 @@
+/*
+
+18. Autocompletar en formulario y require.
+
+El navegador nos puede ayudar para poder facilitar al usuario el autocompletado de los input del formulario.
+
+Tambien podemos hacer necesario que ciertos items de nuestro formulario sea necesario rellenar para poder ser enviado.
+
+<form action="">
+        <label for="nombre">
+            <span>¿Cual es tu nombre?</span>
+            <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+        </label>
+
+        <label for="correo">
+            <span>¿Cual es tu correo?</span>
+            <input type="email" name="correo" id="correo" autocomplete="email" required>
+        </label>
+
+        <label for="pais">
+            <span>¿En que pais vives?</span>
+            <input type="text" name="pais" id="pais" autocomplete="country" required>
+        </label>
+
+        <label for="cp">
+            <span>¿Cual es tu codigo postal?</span>
+            <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+        </label>
+
+        <input type="submit">
+    </form>
+
+Para decirle al navegador ayude al usuario al autocompletado de sus datos le tenemos que meter a los input otro atributo llamado autocomplete.
+
+autocomplete="name"
+autocomplete="email"
+autocomplete="country"
+autocomplete="postal-code"
+
+Los valores que le pasamos es bastante variable si queremos profundizar lo vemos en la web de mozilla:
+
+https://developer.mozilla.org/es/docs/Web/HTML/Atributos/autocomplete
+
+file:///C:/Users/alfsa/Desktop/html-css/18-etiqueta-form-autocomplete-y%20require/index.html?nombre=Alfredo+Francisco&correo=alfredo32a%40gmail.com&pais=Espa%C3%B1a&cp=28807
+
+Para hacer que un input sea llenado usaremos otro atributo llamado required y listo.
+
+*/

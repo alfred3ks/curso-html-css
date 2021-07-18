@@ -1,0 +1,24 @@
+/*
+
+10. Anatomia de una etiqueta HTML.
+
+La descripcion grafica la podemos ver en la carpeta img la imagen anatomia de una etiqueta html.
+
+<a href="http://dabrook.org">Visit DaBrook</a>
+
+<a></a>
+Esta es una etiqueta ancla que tiene una apertura y cierre.
+
+Las etiquetas con apertura y cierre se les llama ETIQUETA DOBLE.
+
+Las etiquetas que que es solo apertura se les llama ETIQUETA SIMPLE.
+
+Visit DaBrook
+Es lo que se conoce como el contenido que lleva la etiqueta.
+
+A la etiqueta + el contenido se le llama element.
+
+<a href="http://dabrook.org">
+Lo que va dentro de la etiqueta de apertura se le llama atributo.
+
+*/

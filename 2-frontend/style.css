@@ -1,0 +1,60 @@
+/*
+
+2. Desarrollador Frontend.
+
+Web Developer Fundamentals.
+Cosas que debes saber en el mundo del Desarrollo Web.
+
+Perfiles de un Web Developer:
+
+Front-end. Cliente(Browser).
+¿Que hace un frontend?
+¿Que tecnologia maneja?
+
+El frontend es el Desarrollador que va a manejar las cosas del lado del cliente, se entiende como cliente el navegador, el browser.
+
+Las tecnologias que trabaja un frontend son:
+
+- HTML
+- CSS
+- JS
+
+Estos tres son estandares, los cuales entiende el navegador, los cuales debe dominar a la perfeccion un frontend.
+
+De igual forma los frontend tambien trabajan con frameworks de CSS:
+
+- Bootstrap,
+- Materialize
+- Foundation
+
+Estos frameworks nos aportan ciertos fragmentos de css ya construidos para acelerar nuestros proyectos.
+
+Tambien existen frameworks y librerias de JS:
+
+- React,
+- Angular,
+- Vue
+
+Entre otras.
+
+Estas librerias despues que un frontend ya entiende bien JS las puede utilizar para proyectos que puedan escalar mas rapido y una interaccion mayor.
+
+Tambien manejan preprocesadores de CSS:
+
+- less
+- stylus
+- sass
+
+Es como manejar css con super poderes.
+
+Y como punto final tambien manejan compiladores/ empaquetadores de JS:
+
+- Babel
+- Webpack
+
+Babel ayuda a utilizar lo ultimo de JS y compilarlo en un JS que el navegador pueda entender.
+
+Webpack nos ayuda a generar empaquetados de ciertas tecnologias y dependencias de nuestro proyecto y trabajar un solo empaquetado que es elque subiremos a produccion con todo el proyecto listo.
+
+
+*/

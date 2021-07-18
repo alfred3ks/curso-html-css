@@ -1,0 +1,97 @@
+/*
+
+36. Max/Min-width/ vw y vh.
+
+Las unidades vw es el viewport del width y vh es el viewport del heigth.
+
+En este ejemplo:
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: lavender;
+}
+
+el main ocupa todo el 100% del ancho y el alto.
+
+Ahora vemos los estilos que vamos aplicar a section:
+
+section {
+    width: 80%;
+    height: 50rem;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+Una instruccion interesante es el del margin: 0 auto.
+Aplica un margen 0 arriba u abajo y alos lados auto manteniendo el tamaño del section.
+
+Para el caso del width:
+Ahora para trabajar con min width siempre tenemos que dar un width base en porcentaje % asi:
+
+section {
+    width: 80%;
+    min-width:32rem
+    height: 50rem;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+Cuando alcanzamos ese valor minimo de 320 desaparece el scroll. OJO recordar que min-width tiene que siempre venir acompañado del width.
+
+Tambien podemos limitar el crecimiento con max-width asi:
+
+section {
+    width: 80%;
+    min-width:32rem;
+    max-width:50rem
+    height: 50rem;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+Ahora para el caso del heigth:
+
+Es muy similar solo que en este caso no debe tener un valor en % inicial para el width:
+
+Ahora dentro del contenedor de seccion metemos un parrafo con un texto lorem si vemos esa cantidad de contenido colapsa el contenedor. Se le llama realmente un proble de overflow. Osea que el texto es mayor que el espacio del contenedor padre.
+
+Para solucionar esto en vez de darle un height fijo le daremos un min-height:500px. Osea su tamaño minimo sera de 500px pero si si interior es mayor el deberia crecer al tamaño del contenido.
+
+asi:
+
+section {
+    width: 80%;
+    min-width: 32rem;
+    max-width: 50rem;
+    min-height: 50rem;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: lavender;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 32rem;
+    max-width: 50rem;
+    min-height: 50rem;
+    background-color: lightcoral;
+}

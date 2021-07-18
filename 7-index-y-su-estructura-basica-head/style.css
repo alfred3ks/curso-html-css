@@ -1,0 +1,59 @@
+/*
+
+7. Index y su estructura básica: header.
+
+¿Porque index? ¿Tiene que ser index o cualquier nombre?
+
+La primer pagina siempre debe ser index.html, va ser la pagina inicial que el servidor va a buscar si tiene que abrir un proyecto.
+
+Si esta pagina no existe nosotros debemos decirle al servidor cual es la pagina que se usara como pagina de inicio. Si no le decimos cual es la pagina de inicio el servidor nos regresara toda la estructura de carpetas del proyecto y eso no es lo ideal.
+
+La estructura basica que podemos tener en un archivo index.html es la siguiente:
+
+<!DOCTYPE html>
+
+Esta linea de codigo le dice la navegador que el codigo que viene a continuacion es HTML5, entiende todas las etiquetas en HTML5.
+
+<html lang="en"></html>
+
+A continuacion tenemos el contenedor padre de todo el proyecto. Dentro de este contenedor vamos a poner todas las etiquetas de nuestro proyecto.
+
+Hay un atributo muy importante, lang="es", es el que le dice al navegador cual es el lenguaje de la pagina web.
+
+<head></head>
+<body></body>
+
+head y body son etiquetas hermanas.
+
+Dentro de head, va todo lo que es importante para el navegador de la forma que nosotros hemos construido nuestro proyecto pero no es visual para el usuario.
+Aqui podemos encontrar todas las dependencias, las librerias externas, las fuentes, los ligues al archivo css. El usuario solo va a ver lo que esta dentro del body.
+
+Dentro de body una de las etiquetas que vamos a encontrar es una llamada:
+
+<meta charset="UTF-8">
+
+La etiqueta meta, va a dar cierta informacion al navegador de como tratar nuestro proyecto, es una etiqueta que cierra sola.
+Esta lleva una atributo llamado charset con un valor UTF-8, el cual le dice al navegador que entienda caracteres especiales, como es la ñ, los emoji.
+
+<meta name="description" content="">
+
+Otro meta que debemos llevar en nuestro head con los atributos name = "description" y content = "Esta pagina te mostrara fotos de gatitos" nos ayuda en el tema del CEO porque aqui ponemos la descricion de nuestra pagina.
+
+<meta name="robots" contenid="index,follow">
+
+Este meta nos ayudara para el tema de los robot de posicionamiento de los navegadores. Aqui le autorizamos o no a indexar y siga nuestra pagina para un tipo de busquedas.
+
+<title>Web index</title>
+
+Esta etiqueta nos muestra en la pestaña el titulo de la pagina web.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Este meta es importante para los proyectos responsive. Esta es una etiqueta muy importante a dia de hoy debido a la adopcion de moviles. viewport le dice el tamaño de la pantalla, y content el tamaño del dispositivo a una escala de 1.0.
+
+<link rel="stylesheet" href="">
+
+Con la etiquetas link la usamos para agregar nuestro enlace con nuestro archivo css, rel le dice que el docuemntos que va cargar es una hoja de estilos, en href le indicamos la ruta donde se encuentra nuestro archivo css.
+
+
+*/

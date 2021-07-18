@@ -1,0 +1,47 @@
+/*
+
+30. Combinadores: adjacent siblings(combinators)
+
+Los combinadores en css nos ayudaran a tener una especificidad mas certera.
+
+Nos permite combinar multiples selectores y crear una mayor especificidad.
+
+Lo podemos ver en la imagen anexa(combinators).
+
+Tenemos basicamente 4 combinadores:
+
+1. Hermano adyacente o cercano:
+
+div + p {
+    ...
+}
+
+2. Hermano general:
+
+div ~ p {
+    ...
+}
+
+3. Hijo:
+
+div > p {
+    ...
+}
+
+4. Descendiente:
+
+div p {
+    ...
+}
+
+NOTA: Para sacar la virgulilla en windows portatil:
+
+AltGr + 4
+
+*/
+
+/* Hermano adyacente o cercano  (adyacent sibling)*/
+/* En este caso nos dice aplicale color rojo a una etiqueta parrafo que esta cercana a un h2 */
+h2 + p {
+    color: red;
+}

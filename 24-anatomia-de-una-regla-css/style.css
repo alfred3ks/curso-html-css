@@ -1,0 +1,26 @@
+/*
+
+24. Anatomia de una regla css:
+
+Tenemos una imagen anexa donde podemos ver como es la anatomia de una regla css.
+
+Vemos la explicacion a continuación:
+
+p {
+    color: red;
+}
+
+p -> es el selector al que estamos apuntando.
+
+color:red --> Es la declaracion del estilo.
+
+color --> Es la propiedad que vamos a aplicar.
+
+red --> Es el valor de la propiedad.
+
+*/
+
+.img img {
+    width: 500px;
+    background-color: brown;
+}

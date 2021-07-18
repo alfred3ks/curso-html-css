@@ -1,0 +1,21 @@
+/*
+
+31-combinadores-general-siblings
+
+2. Hermano general:
+
+div ~ p {
+    ...
+}
+
+NOTA: Para sacar la virgulilla en windows portatil:
+
+AltGr + 4
+
+*/
+
+/* hermano general (general sibling) */
+h2 ~ p {
+    color: rebeccapurple;
+}
+

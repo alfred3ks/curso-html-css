@@ -1,0 +1,57 @@
+/*
+
+37. Position.
+
+Veremos la parte de position en css.
+
+Es la forma en que podemos posicionar los contenedores, las cajas o las etiquetas html.
+
+Posicionamiento de los elementos:
+
+En html tenemos diferentes tipos de position pero todos los elementos vienen con position static por defecto.
+
+Esto quiere decir que se quedan donde la hemos puesto.
+
+Las que tenemos son las siguientes:
+
+Position:
+static ---> por defecto
+absolute
+relative
+fixed
+sticky
+
+Como hemos dicho todos los elementos parten con position static.
+
+Position absolute --> cuando aplicamos esta regla css a una elemento este elemento pierde su posicion y su espacio queda ocupado por el que le sigue. El elemento quedo arriba de todos. Su referencia es el documento html. Esto para cuando vayamos a mover el elemento.
+
+Con las intrucciones top, left, right y botton podemos mover el elemento.
+
+Position relative --> cuando aplicamos esta regla css el elmento tambien conserva su posicion y ademas este no cede su lugar al resto de elementos. Tambien podemos moverlo con las propiedades de top, left, right y botton.
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    border: 2px black dotted;
+    display: inline-block;
+}
+
+.box {
+    display: inline-block;
+    background-color: lightsalmon;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+
+}
+
+#two {
+    background-color: yellow;
+    position: relative;
+    left: 500px;
+}

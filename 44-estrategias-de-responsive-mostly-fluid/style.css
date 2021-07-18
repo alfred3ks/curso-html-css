@@ -1,0 +1,63 @@
+/*
+
+44. Estrategia de responsive mostly fluit.
+
+Patrones de maquetacion Responsive Design. En la industria existen tres patrones mas populares, aunque existen mas.
+
+MOBILE FIRST....
+
+1. Mostly Fluid, tenemos el primer patron:
+
+Iniciamos con columnas en dispositivos mobiles, cuando pasamos a una tablet en vertical empezamos a reacomodar las columnas, igual si cambiamos la orientacion de la tablet tambien vemos como lo distribuimos y luego cuando pasemos a desktop ya tendriamos la vista total con los contenedores reacomodados por importancia.
+
+Una vez que tenemos nuestro diseño cambiaremos la forma como se comportan los elementos con las media queries.
+
+*/
+
+/* Reset estilo basicos navegador */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1,.c2,.c3,.c4,.c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+
+}
+
+.c1 {
+    background-color:goldenrod;
+}
+
+.c2 {
+    background-color: lightcoral;
+}
+
+.c3 {
+    background-color: lightseagreen;
+}
+
+.c4 {
+    background-color: limegreen;
+}
+
+.c5 {
+    background-color: orangered;
+}

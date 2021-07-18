@@ -1,0 +1,48 @@
+/*
+
+50. Imagenes responsive.
+
+Vamos a ver como trabajamos las imagenes en responsive.
+La web esta llena de texto y de imagenes.
+
+Ahora veremos las buenas practicas lo que debemos hacer.
+
+Usaremos la etiqueta picture.
+
+<main>
+        <h1>Imagenes responsive</h1>
+        <picture>
+            <source
+            srcset="./img/large.jpg"
+            media="(min-width:1300px)" >
+            <source
+            srcset="./img/mediun.jpg"
+            media="(min-width:1000px)">
+            <img
+            src="./img/small.jpg"
+            alt="Imagen ejemplo">
+        </picture>
+    </main>
+
+Asi debemos cargar nuestras imagenes para diferentes tamaños y optimizamos para diferentes dispositivos. OJO en source debemos poner primero la imagen grande y luego la mediana, la imagen pequeña se renderiza en img.
+
+El navegador es el que decide cual mostrar en funcion del tamaño de la pantalla.
+
+En el css OJO el width:100% es nuestro mejor amigo!!!!
+
+
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}

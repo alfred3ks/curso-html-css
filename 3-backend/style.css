@@ -1,0 +1,48 @@
+/*
+3. Desarrollador backend.
+
+¿Que hace un backend?
+
+Es lo opuesto a lo que hace un frontend, este trabaja del lado del servidor.
+
+Maneja toda la logica en el momento que el navegador hace una peticion al servidor para solicitar una pagina web. El servidor lo que hace es buscar esa pagina,todo lo que construye esta pagina y se lo regresa al navegador par que este renderice la web.
+
+Tecnologias que maneja un backend:
+
+El backend a diferencias de lo que hace un fontend no tiene un estandar como tal. Como si lo son HTML, CSS,JS.
+
+El backend puede trabajar diferentes lenguajes de programacion:
+
+- NodeJS
+- Python
+- PHP
+- Rubi
+- Go
+- Java
+- .net
+
+Tambien para el backend encontramos frameworks:
+
+- django
+- laravel
+- Rails
+- Express
+- spring
+
+Estos frameworks estan hechos por encima de los lenguajes de programacion y nos ayudan a hacer cosas mas especificas, backend o app mas robustas y de manera mas rapida.
+
+Un backend tambien maneja el tema de la infraestructura, donde va a subir su app.
+
+Aqui nos metemos mas en el tema de la nube, de aqui puede salir otro perfil, que se le conoce como (devops), son personas que se especializan en los servicios que vemos a continuacion:
+
+- Google Cloud
+- AWS
+- DigitalOcean
+- Heroku
+
+De igual forma un backend debe manejar el tema de las bases de datos, tiene que conectarla a la tecnologia que esta desarrollando, entre algunas podemos comentar:
+
+- mongoDB
+- MySQL
+- PostgreSQL
+*/

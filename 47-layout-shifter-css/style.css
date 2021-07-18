@@ -1,0 +1,98 @@
+/*
+
+47. layout shifter css.
+
+Veremos este otro modelo para implementar mobile first.
+
+Este modelo se llama layout shifter.
+
+Consiste que en mobile todos los elementos estan en vertical, pero al pasar a tablet tenemos contenedores metidos entre otros que se configurar para mostrar de una forma distinta, igual para pc.
+
+Este modelo tiene ciertos contenedores padres que se van a reposicionar con mas contenedores dentro.
+
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+}
+
+.c4 {
+    height: auto;
+}
+
+.c1 {
+    background-color:#003476;
+
+}
+
+.c2 {
+    background-color: #0062d2;
+
+}
+
+.c3 {
+    background-color: #b4d2f7;
+}
+
+.c4 {
+    background-color: #d5dfef;
+
+}
+
+.c5 {
+    background-color: #dfe1e5;
+
+}
+
+/* Media Queries */
+
+@media (min-width:600px){
+    .c1 {
+        width: 25%;
+    }
+    .c4 {
+        width: 75%;
+    }
+    .c5 {
+        width: 100%;
+    }
+}
+
+@media (min-width:800px){
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c1 {
+        width: 50%;
+        order: 1;
+    }
+    .c4 {
+        width: 100%;
+    }
+    .c5 {
+        width: 50%;
+        order: 2;
+    }
+}

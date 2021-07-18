@@ -1,0 +1,68 @@
+/*
+
+52. Textos en accesibilidad.
+
+Otro tema importante en el tema de accesibilidad es el texto.
+
+En accesibilidad los textos no debemos usar el texto en pixeles, debemos implementar medidas relativas (rem).
+
+h1 {
+    font-size: 30px;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+Si lo hacemos de esta manera usando pixeles para la fuente y vamos al navegador y cambiamos la fuente:
+Los 3 puntos arriba a la derecha/configuracion/tamaño de fuente y ponemos grande nos daremos cuenta que nuestro texto no cambia. Y eso es un problema para personas con discapacidad optica.
+
+Debemos usar unidades relativas!!! y la ideal es el rem.
+
+Deberia ser asi:
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 30px;
+    font-size: 3rem;
+
+}
+
+p {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    /* font-size: 30px; */
+    font-size: 3rem;
+
+}
+
+p {
+    /* font-size: 18px; */
+    font-size: 1.8rem;
+}

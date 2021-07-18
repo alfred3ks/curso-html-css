@@ -1,0 +1,70 @@
+/*
+
+38. Display.
+
+Veremos el tema del display.
+
+display-block.
+display-in-line.
+display-in-line-block
+
+Son importantes para posicionar nuestros contenedores.
+
+Display block.
+Los elementos cuando son mostrados por defecto poseen diferentes tipos de display. Los hay que su display es block eso quiere decir que ocupara 100% del width sin importar su contenido. Aqui podria utilizar tanto el margin como el padding de todo el bloque. Por ejemplo tenemos los div.
+
+Display inline.
+Son elementos que no ocupan el 100% del width solo ocupan el espacio del contenido. Si usamos margin sobre este tipo de elemento solo actual sobre el left y el right. Tambien si le damos un width y un height tampoco el elemento responde. Por ejemplo la etiqueta span.
+
+Ahora tambien hay elementos que son inline-block.
+Este tipo de etiqueta la podemos ver en la listas.(li)
+
+Este tipo de display es list-item. Pero cada list-item se comporta como block.
+
+En nuestro ejemplo:
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+Como vemos le hemos cambiado el diplay a inline-block con esta propiedad tenemos lo mejor de inline y block en nuestra lista. mmmm interesante.
+
+
+*/
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.block-element {
+    background-color: lawngreen;
+    margin: 10px;
+    padding: 20px;
+}
+
+span {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+}
+
+.nav {
+    background-color: lightcyan;
+    padding:20px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -1,0 +1,92 @@
+/*
+
+42. Variables en css - custom properties.
+
+Es posible usar variables en css para hacer el trabajo mas simple y usarlo para diferentes cosas y evitar el codigo repetido.
+
+Tenemos que ver que elemento se repiten en nuestro css, bien sea tema de colores, alturas, anchos, etc.
+
+Aqui vemos un nuevo elemento que entra en las hojas dd estilo al inicio de la misma:
+
+:root {
+
+}
+
+Este root ya lo vimos que hace referencia a nuestro html de nuestro proyecto.
+
+Para contruir una variable lo haremos asi:
+
+:root {
+    --nombre_de_la_variable: propiedad;
+}
+
+Ver en nuestro ejemplo:
+
+:root {
+    --primary-color:#003476;
+}
+
+Y asi lo implementamos:
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+
+Las variables son bastantes interesante en archivos de css mas grandes.
+
+*/
+
+/* Variables en css */
+:root {
+    --primary-color: #003476;
+    --secundary-color: #b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* Recordar 1rem = 10px */
+}
+
+/* Inicio de los estilo */
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+    font-size: var(--header-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkred;
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    border: solid 1px red;
+    font-size: var(--font);
+}
+
+h1 {
+    font-size: var(--header-size);
+    color: var(--primary-color);
+    border: 1px solid;
+    margin: 10px;
+}
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secundary-color);
+}
+

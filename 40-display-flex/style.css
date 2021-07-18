@@ -1,0 +1,108 @@
+/*
+
+40. Display flex conocido como flex box.
+
+Este estandar viene para solucionar el tema de los position.
+
+Para poder empezar a utilizar la propiedad flex debemos generar un container sobre los elementos que deseamos modificar.
+
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+}
+
+Cuando aplicamos la propiedad flex al padre automaticamente los hijos de ese contenedor se van a agrupar en row, osea uno al lado del otro.
+
+Pero tambien podemos hacer el cambio con flex-direccion asi:
+
+flex-direction: row; ---> Por defecto
+flex-direction: row-reverse; ---> Invierte la direccion
+flex-direction: column; ---> lo coloca en vertical
+flex-direction: column-reverse; ---> invierte en vertical
+
+Ademas podemos poner esta otra propiedad:
+
+flex-wrap: wrap; --> al hacerce mas pequeña la pantalla los elementos conservan su tamaño y colapsaran y se colocaran debajo
+
+flex-wrap: nowrap;--> Los elementos no colapsan pierden su tamaño y se encogen.
+
+Ahora podemos alinear el contenido:
+La propiedad es justify-content.
+
+justify-content: flex-start; --> por defecto
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-around;
+justify-content: space-between;
+justify-content: space-evenly;
+
+
+Mmmmm muy interesante....
+Seguimos....
+
+*/
+
+/* Empezamos aplicar estilos con flex box */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Con esto ya podemos hacer uso del rem  */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+    /* flex-direction: row;  --> por defecto*/
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; --> por defecto*/
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: flex-start; -->por defecto */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    /* align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: baseline; */
+}
+
+.box {
+    width: 10rem;
+    width: 100px;
+    height: 10rem;
+    height: 100px;
+}
+
+.box1 {
+    background-color: black;
+    color: white;
+}
+.box2 {
+    background-color: blueviolet;
+}
+.box3 {
+    background-color: chartreuse;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: teal;
+}
+.box6 {
+    background-color: rebeccapurple;
+}

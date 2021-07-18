@@ -1,0 +1,56 @@
+/*
+
+25. Modelo de caja.
+
+Este tema es importante entender para poder aplicar bien nuestros estilos css.
+
+Cada elemento que se renderiza en el navegador se renderiza como una cajas o contenedores.
+
+Tenemos una imagen anexa donde se puede ver los elementos que participan en el modelo de caja del navegador.
+
+Los elementos que participan en este modelo de caja son:
+
+- Margin: Es el espacio externo de la caja.
+- Border:  Tenemos margin TOP-BOTTOM-LEFT-RIGHT: Es practicamente la linea que va a definir a cada uno de los elementos. Puede o no estar por default viene transparente. Pero nosotros podemos ponerle un color y darle un ancho.
+- Padding: Tenemos Padding TOP-BOTTOM-LEFT-RIGHT:Es el espacio interno de la caja.
+- Contenido: Puede ser un texto, imagenes, videos o cualquier elemento que vayamos a ver una vez renderizado.
+- Width: Es el largo horizontal del elemento.
+- Heigth: Es el alto vertical del elemento.
+
+Recordando lo que hemos hablado anteriormente, el navegador ya aporta unos estilos de inicio, lo ideal es hacer reset a esos estilos.
+
+Para esto usaremos el selector universal(*).
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+Las dos primeras propiedades estan claras, pero la ultima box-sizing:
+
+La propiedad CSS box-sizing como el user agent debe calcular el ancho y alto total de un elemento.
+
+Por defecto en el modelo de caja de CSS, el ancho y alto asignado a un elemento es aplicado solo al contenido de la caja del elemento. Si el elemento tiene algun borde (border) o relleno (padding), este es entonces añadido al ancho y alto a alcanzar el tamaño de la caja que es desplegada en pantalla. Esto significa que cuando se definen el ancho y alto, se tiene que ajustar el valor definido para permitir cualquier borde o relleno que se pueda añadir.
+
+La propiedad box-sizing puede ser usada para ajustar el siguiente comportamiento:
+
+content-box es el comportamiento CSS por defecto para el tamaño de la caja (box-sizing). Si se define el ancho de un elemento en 100 pixeles, la caja del contenido del elemento tendrá 100 pixeles de ancho, y el ancho de cualquier borde o relleno ser añadirá al ancho final desplegado.
+
+border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra. Esto típicamente hace mucho más fácil dimensionar elementos.
+
+*/
+
+/* Para el reset de los estilos del navegador */
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin-top: 20px;
+    border: 10px solid gray;
+    padding: 20px 35px;
+}

@@ -1,0 +1,10 @@
+51. Semantica accesibilidad.
+
+Accesibilidad  --> Producto para todos!!!!
+
+1. Semantica, el uso del HTML semantico ayuda mucho al tema de accesibilidad.
+
+Existen software que ayudan a leer la pantalla y le dice al usuario en que parte de la web esta.
+
+HTML semantico es extremadamente necesario!!!!
+

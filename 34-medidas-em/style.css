@@ -1,0 +1,91 @@
+/*
+
+34. Medidas em.
+
+Vamos a entender la medida relativa em.
+
+Tenemos nuestro ejemplo:
+
+    <main class="text-container">
+        <p>Soy un texto ejemplo</p>
+        <div>
+            <p>Soy otro texto ejemplo</p>
+        </div>
+    </main>
+
+Utilizaremos em en la fuente
+
+.text-container {
+    font-size: 1.5em;
+
+}
+
+em --> acronimo de elemento. Toma en este caso el tamaño de la fuente predeterminada que tenga el padre directo y lo altera en la unidad que le pongamos delante. Mmmm interesante.
+En nuestro ejemplo la unidad predeterminada del texto no lo da html y es de 16px, al multiplicar 16*1.5=24. Vemos lo que nos arroja el inspector:
+
+box-sizing:border-box;
+display:block;
+
+font-size:24px;
+
+height:27.2px;
+margin-block-end:0px;
+margin-block-start:0px;
+margin-bottom:0px;
+margin-inline-end:0px;
+margin-inline-start:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+padding-top:0px;
+width:540px;
+
+Entonces en conclusion 1em equivale al valor predeterminado por el elemento padre.
+
+En este caso que vemos a continuacion el padre es el body:
+
+body {
+    font-size: 20px;
+}
+
+Utilizaremos em en la fuente
+.text-container {
+    font-size: 1.5em;
+
+}
+
+vemos el resultado en el isnpector:
+
+box-sizing:border-box;
+display:block;
+
+font-size:30px;
+
+height:34.4px;
+margin-block-end:0px;
+margin-block-start:0px;
+margin-bottom:0px;
+margin-inline-end:0px;
+margin-inline-start:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding-bottom:0px;
+padding-left:0px;
+padding-right:0px;
+padding-top:0px;
+width:540px;
+
+Ahora em esta muy bien pero no es lo mas usual ya que como se dice toma como referencia el valor del elemento padre y podria causar aguno efectos extraños en elementos anidados. Para hacerlo mejor y evitar estos casos mejor usar rem.
+*/
+
+main {
+    font-size: 20px;
+}
+/* Utilizaremos em en la fuente */
+.text-container {
+    font-size: 1.5em;
+}

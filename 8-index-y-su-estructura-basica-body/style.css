@@ -1,0 +1,52 @@
+/*
+
+8. Index y su estructura basica: body
+
+<body></body>
+
+Dentro de body podemos incliur las etiquetas que mostraran de manera semantica nuestra web.
+
+Dentro de body podemos encontrar dos tipos de etiquetas, las de contenido, son las que llevan el texto, imagenes, los videos o cualquier cosa que se vaya a renderizar en el proyecto, y las etiquetas contenedoras, estas llevan dentro otras etiquetas y le daran la estructura a nuestra web.
+
+<header></header>
+
+Etiqueta usada para estructurar nuestro header o cabecera de nuestro proyecto. A continuacion podemos ver una estructura basica real de una pagina web:
+
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <h1>Soy un titulo</h1>
+        <section>
+            <article>
+                <p>Soy un parrafo</p>
+            </article>
+        </section>
+        <h2>Soy una lista no ordenada</h2>
+        <ul>
+            <li>Manzanas</li>
+            <li>Peras</li>
+            <li>Uvas</li>
+        </ul>
+        <h2>Soy una lista ordenada</h2>
+        <ol>
+            <li>Melon</li>
+            <li>Sandia</li>
+            <li>Naranja</li>
+        </ol>
+
+    </main>
+
+    <footer>
+        <p>Aqui tenemos el footer</p>
+        <a href="#">Soy un link</a>
+    </footer>
+
+Las etiquetas ul nos dan listas no ordenadas (unordered list) y las ol nos dan listas ordenadas (ordered list).
+
+La etiqueta li son las listas (list item).
+
+Es importante siempre utilizar html5 semantico.
+
+*/

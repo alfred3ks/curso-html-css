@@ -1,0 +1,25 @@
+/*
+
+5. Páginas estáticas vs páginas dinámicas.
+
+Lo puedes ver mas grafico en el material de la carpeta img.
+
+Páginas estáticas:
+
+Server -----> Client/Browser
+
+Son todas las páginas estaticas, van a ser todas las productos web, todas las paginas que van a tener pura información para consumir, ya sea texto, imagenes y esta información no va a cambiar. Siempre sera la misma. Por ejemplo, un blog post, una ves redactado el articulo este no cambia, siempre es el mismo cuando interactua el usuario con el. Este tipo de páginas se les conoce como paginas infroamtivas o landing pages. Estas páginas no estan conectadas a un servidor o a una base de datos. El usuario no podra interactuar con la web, no tendra ningun tipo de login o de interacción similar.
+
+Páginas dinámicas:
+
+Web Server + Database Server ----> Client/Browser
+
+Son tambien conocidas como WebApp, estan dejan de ser paginas y se convierten mas en aplicaciones, estas si estan conectadas a una base de datos, el usuario a traves del navegador si puede generar interaccion con la web o con la app.
+
+Aqui si encontraremos paginas de login, donde el usuario hara peticiones al servidor y podra acceder a una sesion dentro de la web.
+
+El usuario puede interactuar con productos, o observar lo que hacen las personas que y sigo y tambien otros usuarios me pueden seguir.
+
+Un ejemplo lo tenemos en twitter.
+
+*/

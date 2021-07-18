@@ -1,0 +1,51 @@
+/*
+45. Responsive design - media queries.
+
+Como podemos asegurar de que nuestros productos ahora puedan ser multiplataforma, osea que se vean bien en un movil, que puedan escalar y verse diferente en una tableta o en un pc.
+
+Esto es muy importante, aqui es donde muchas empresas y desarrolladores comenten errores, no saben como implementar.
+
+Lo que necesitamos para trabajar responsive design:
+
+Las Media Queries.
+
+Un apartado importante tambien son los breakpoint. Son ese punto en el tamaño de la pantalla donde se va generar un cambio. Este cambio es donde puedo reposicionar mis elementos en funcion de la pantalla del dispositivo.
+
+Las Media Queries con los breakpoint son estas:
+Mobile First
+Mobile Only
+
+@media (min-width:480px){
+    ...
+}
+
+@media (min-width:768px){
+    ...
+}
+
+@media (min-width:1024px){
+    ...
+}
+
+Para poder trabajar bien la filosofia Mobile First / Mobile Only debemos en la cabecera inplementar como primer archivo css el de Mobile
+
+Asi:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    Aqui la hoja que aplica a los estilos mobile
+    <link rel="stylesheet" href="./css/style.css">
+    Aqui la hoja que aplica a los estilos table
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width:768px)">
+    Aqui la hoja que aplica a los estilos escritorio
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width:1024px)">
+
+    <title>Mostly Fluit</title>
+</head>
+
+
+OHHH esto es nuevooooo!!!! Interesante..... Asi el navegador cada vez que cambie de dispositivo solo va a cargar la hoja de estilo para ese dispositivo.
+
+*/
